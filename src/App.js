@@ -4,6 +4,7 @@ import { NavBar } from "./Components/Navbar/navBar-component";
 import React, { Component } from "react";
 import { ContextProvider } from "./Components/Context/CounterProvider";
 import { CounterOne } from "./Components/Context/CounterOne";
+import { CountReducer } from "./Components/Reducer/CountReducer";
 
 class App extends Component {
   state = {
@@ -85,7 +86,8 @@ class App extends Component {
       <>
         <ContextProvider>
           <p>wellcme to the context</p>
-          <CounterOne />
+          <CountReducer />
+          {/* <CounterOne /> */}
         </ContextProvider>
         {/* <NavBar
           // totalItems={this.state.products.filter((p) => p.quantity > 0).length}

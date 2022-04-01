@@ -1,0 +1,28 @@
+.navBar {
+  width: 100%;
+  height: 60px;
+  background-color: #efefef;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  h2 {
+    font-size: 24px;
+    color: #444;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  span {
+    width: 30px;
+    height: 30px;
+    color: #6b21a8;
+    background-color: #ede9fa;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+  }
+}

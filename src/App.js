@@ -86,8 +86,8 @@ class App extends Component {
       <>
         <ContextProvider>
           <p>wellcme to the context</p>
-          <CountReducer />
-          {/* <CounterOne /> */}
+          {/* <CountReducer /> */}
+          <CounterOne />
         </ContextProvider>
         {/* <NavBar
           // totalItems={this.state.products.filter((p) => p.quantity > 0).length}

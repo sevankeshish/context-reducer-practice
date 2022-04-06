@@ -3,8 +3,7 @@ import { useProducts, useProductsAction } from "../Providers/ProductProviders";
 import "./ProductList-style.scss";
 
 export const ProductList = (props) => {
-  const { changeHandler, decrementHandler, removeHandler, incrementHandler } =
-    useProductsAction();
+  const dispatch = useProductsAction();
   const products = useProducts();
 
   if (products.length === 0) return <div>there is no product in the cart</div>;
@@ -15,10 +14,10 @@ export const ProductList = (props) => {
         <Product
           key={product.id}
           items={product}
-          onDelete={() => removeHandler(product.id)}
-          onIncrement={() => incrementHandler(product.id)}
-          onChange={(e) => changeHandler(e, product.id)}
-          onDecrement={() => decrementHandler(product.id)}
+          onDelete={() => dispatch({ type: "remove", id: product.id })}
+          onIncrement={() => dispatch({ type: "increment", id: product.id })}
+          onChange={(e) => dispatch({ type: "edit", id: product.id, event: e })}
+          onDecrement={() => dispatch({ type: "decrement", id: product.id })}
         />
       ))}
     </div>

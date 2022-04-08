@@ -1,6 +1,6 @@
 import React from "react";
-import { useState, useContext, useReducer } from "react";
-
+import { useContext, useReducer } from "react";
+import { productsData } from "../db/products";
 export const ProductContext = React.createContext();
 export const ProductContextDispatcher = React.createContext();
 
@@ -47,8 +47,17 @@ const reducer = (state, action) => {
       return copyProducts;
     }
     case "filter":
-      console.log(action.event.target.value);
-      return state;
+      // console.log(action.event.target.value);
+      // return state;
+      if (action.event.target.value === "") {
+        return productsData;
+      } else {
+        // console.log(action.event.target.value);
+        const updatedProducts = productsData.filter(
+          (p) => p.availableSizes.indexOf(action.event.target.value) >= 0
+        );
+        return updatedProducts;
+      }
     default:
       return state;
   }

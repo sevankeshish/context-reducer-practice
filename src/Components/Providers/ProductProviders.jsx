@@ -46,6 +46,9 @@ const reducer = (state, action) => {
       copyProducts[index] = product;
       return copyProducts;
     }
+    case "filter":
+      console.log(action.event.target.value);
+      return state;
     default:
       return state;
   }

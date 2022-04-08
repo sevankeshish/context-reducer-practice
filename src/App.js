@@ -11,12 +11,14 @@ import {
   useProducts,
   useProductsAction,
 } from "./Components/Providers/ProductProviders";
+import { Filter } from "./Components/Filter/filter";
 
 export const App = () => {
   return (
     <div className="App">
       <ProductsProvider>
         <NavBar />
+        <Filter />
         <ProductList />
       </ProductsProvider>
     </div>

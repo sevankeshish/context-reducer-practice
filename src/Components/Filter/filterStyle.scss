@@ -1,7 +1,22 @@
 .filter {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   //   background-color: aquamarine;
-  width: 5 0rem;
+  //   width: 100rem;
   align-items: center;
+  margin: 20px 0;
+
+  .selectContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  .selectContainer span {
+    display: block;
+    margin-right: 1rem;
+    // background-color: aqua;
+  }
+  .select {
+    width: 200px;
+  }
 }

@@ -26,8 +26,8 @@ export const Filter = () => {
   return (
     <div className="filter">
       <p>filter products based on : </p>
-      <div>
-        order by
+      <div className="selectContainer">
+        <span>order by</span>
         {/* <select onChange={changeHandler} value={value}> */}
         {/* <select onChange={(e) => dispatch({ type: "filter", event: e })}> */}
         {/* <select onChange={(e) => console.log(e.target.value)}> */}
@@ -40,7 +40,12 @@ export const Filter = () => {
           <option value="XL">XL</option>
           <option value="XLL">XLL</option> */}
         {/* </select> */}
-        <Select value={value} onChange={changeHandler} options={options} />
+        <Select
+          className="select"
+          value={value}
+          onChange={changeHandler}
+          options={options}
+        />
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useProductsAction } from "../Providers/ProductProviders";
 import Select from "react-select";
+import "./filterStyle.scss";
 
 const options = [
   { value: "", label: "ALL" },
@@ -23,7 +24,7 @@ export const Filter = () => {
     console.log("sevan", value);
   };
   return (
-    <div>
+    <div className="filter">
       <p>filter products based on : </p>
       <div>
         order by

@@ -14,15 +14,29 @@ const options = [
   { value: "XLL", label: "XLL" },
 ];
 
+const sortOptions = [
+  { value: "highest", label: "highest" },
+  { value: "lowest", label: "lowest" },
+];
+
 export const Filter = () => {
   const [value, setValue] = useState("");
   const dispatch = useProductsAction();
+  const [sort, setSort] = useState("");
+
+  const sortHandler = (selectedOption) => {
+    dispatch({ type: "sort", event: selectedOption });
+    setSort(selectedOption);
+    // console.log("sevan", value);
+  };
 
   const changeHandler = (selectedOption) => {
     dispatch({ type: "filter", event: selectedOption });
+    dispatch({ type: "sort", event: selectedOption });
     setValue(selectedOption);
     console.log("sevan", value);
   };
+
   return (
     <div className="filter">
       <p>filter products based on : </p>
@@ -45,6 +59,13 @@ export const Filter = () => {
           value={value}
           onChange={changeHandler}
           options={options}
+        />
+
+        <Select
+          className="select"
+          value={sort}
+          onChange={sortHandler}
+          options={sortOptions}
         />
       </div>
     </div>

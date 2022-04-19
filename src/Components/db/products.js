@@ -1,7 +1,7 @@
 export const productsData = [
   {
     id: 1,
-    sku: 1864411933049131,
+    sku: 186441193304913,
     title: "Sphynx Tie Dye Grey T-Shirt",
     quantity: 1,
     description: "Sphynx Tie Dye Grey",
@@ -12,7 +12,7 @@ export const productsData = [
 
   {
     id: 2,
-    sku: 1185407801395452,
+    sku: 118540780139545,
     title: "Danger Knife Grey T-Shirt",
     quantity: 1,
     description: "Danger Knife Grey",
@@ -23,7 +23,7 @@ export const productsData = [
 
   {
     id: 3,
-    sku: 87666112239207,
+    sku: 8766611223920,
     title: "White DGK Script Tee",
     quantity: 1,
     description: "White DGK Script",
@@ -34,7 +34,7 @@ export const productsData = [
 
   {
     id: 4,
-    sku: 919790754344567,
+    sku: 91979075434456,
     title: "Born On The Streets  T-Shirt",
     quantity: 1,
     description: "Born On The Streets",
@@ -45,7 +45,7 @@ export const productsData = [
 
   {
     id: 5,
-    sku: 1054796158284688,
+    sku: 105479615828468,
     title: "Tso 3D Short Sleeve T-Shirt A",
     quantity: 1,
     description: "Tso 3D Short Sleeve",
@@ -56,7 +56,7 @@ export const productsData = [
 
   {
     id: 6,
-    sku: 609048478934389,
+    sku: 60904847893438,
     title: "Man Tie Dye Cinza Grey T-Shirt",
     quantity: 1,
     description: "Man Tie Dye Cinza Grey",
@@ -67,7 +67,7 @@ export const productsData = [
 
   {
     id: 7,
-    sku: 1853266928640534,
+    sku: 185326692864053,
     title: "Crazy Monkey Black T-Shirt",
     quantity: 1,
     description: "1977 Infantil",
@@ -79,7 +79,7 @@ export const productsData = [
 
   {
     id: 8,
-    sku: 561949604073831,
+    sku: 56194960407383,
     title: "Tso 3D Black T-Shirt",
     quantity: 1,
     description: "",
@@ -90,7 +90,7 @@ export const productsData = [
   },
   {
     id: 9,
-    sku: 1160098327635616,
+    sku: 116009832763561,
     title: "Crazy Monkey Grey",
     quantity: 1,
     description: "",
